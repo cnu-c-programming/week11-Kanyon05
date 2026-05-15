@@ -11,6 +11,7 @@ int multiply (int a, int b) {
 }
 
 int main() {
+    int (*ops[2])(int, int) = {add, multiply};
     BinOp ops[2] = {add, multiply};
 
 for (int i= 0; i < 2; i++) {
