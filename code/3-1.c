@@ -14,7 +14,7 @@ int mul(int a, int b) {
 
 int compute(int a, int b, BinOp op) {
     if (op == NULL) {
-        fprintf(stderr, "Null pointer\n");
+        printf("Null pointer\n");
         return -1;
     }
     return op(a, b);
